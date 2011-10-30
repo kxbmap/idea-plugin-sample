@@ -1,0 +1,28 @@
+<idea-plugin version="2">
+  <name>Google Search</name>
+  <description>Searches the word under caret in Google</description>
+  <version>1.0</version>
+  <vendor>kxbmap</vendor>
+  <idea-version since-build="110.187"/>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="GoogleSearchAction" class="sample.plugin.google.GoogleSearchAction" text="Search in Google"
+            description="Searches word under caret in Google">
+        <add-to-group group-id="ToolsMenu" anchor="last"/>
+        <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta G"/>
+    </action>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+</idea-plugin>
